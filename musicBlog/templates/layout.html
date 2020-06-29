@@ -29,6 +29,19 @@
                 Home
             </a>
             <!-- More links to go here -->
+            {% if current_user.is_authenticated %}
+                <div class="ml-auto mr- 4 nav-item dropdown float-right">
+                    <button class="btn btn-default" id="navbarDropDown" data-toggle="dropdown" aria-expanded="false">
+                        <img src="{{url_for('static', filename='icons/caret-down.svg')}}">
+                    </button>    
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="#navbarDropDown">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="{{url_for('logout')}}">Logout</a>
+                    </div>
+                </div>
+            {% else %}
+                <a class="ml-auto nav-link float-right" href="{{url_for('login')}}"> Login </a>
+            {% endif %}
         </nav> 
     
         <div class="container">
