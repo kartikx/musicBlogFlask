@@ -2,12 +2,11 @@
 {% block content %}
     <div class="home-layout">
         <h2>MusicBlog is a Place to share Music Suggestions!</h2>
-        <!-- TODO Center this properly, once you've understood flexbox" -->
         <div class="link-container">
 
                 <a class="btn btn-outline-dark" href="{{url_for('login')}}"> Login </a>
 
-                <a class="btn btn-outline-dark" href="{{url_for('home')}}"> Browse as a Guest </a>
+                <a class="btn btn-outline-dark" href="{{url_for('feed')}}"> Browse as a Guest </a>
 
     </div>
 {% endblock content %}
