@@ -2,12 +2,17 @@
 {% block content %}
     <div class="feed">
         {% for post in posts %}
-            <div class="media">
+            <div class="media feed-post">
                 <!-- ? Insert image here -->
-                <div class="media-body feed-post">
-                    <h5>
+                <img class="rounded-circle"src="{{url_for('static', filename='icons/default.jpg')}}"
+                height="70" width="70">
+                <div class="media-body ml-2">
+                    <a class="article-title" href="#">
                         {{post.title}}
-                    </h5>
+                    </a>
+                    <p class="article-metadata float-right">
+                        {{post.date_posted}}
+                    </p>
                     <p>
                         {{post.content}}
                     </p>
