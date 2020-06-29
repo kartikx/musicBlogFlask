@@ -100,6 +100,11 @@ def register():
         return redirect(url_for('login'))
     return render_template("register.html", title="Sign Up", form=form)
 
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(user_id)
+
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     return "Login";
 
