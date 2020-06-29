@@ -1,5 +1,9 @@
-from flask import render_template
-from musicBlog import app
+from flask import render_template, redirect, url_for, flash, request, abort
+from flask_login import login_user, current_user, logout_user, login_required
+from is_safe_url import is_safe_url
+from musicBlog import app, bcrypt, db, login_manager
+from musicBlog.forms import LoginForm, RegistrationForm
+from musicBlog.models import User, Post
 
 posts = [
     {'username': "kartikx",
