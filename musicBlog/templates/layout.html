@@ -53,8 +53,12 @@
                                 {{message}} Did you <a href="#" class="alert-link">forget your password</a>?
                             </div>    
                         {% else %}
-                            <div class="alert alert-{{category}}">
+                            <div class="alert alert-{{category}} alert-dismissable fade show">
                                 {{message}}
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <!-- &times; is the multiplication sign, to represent the X for the button -->
+                                    <span>&times;</span>
+                                </button>   
                             </div>
                         {% endif %}
                     {% endfor %}
