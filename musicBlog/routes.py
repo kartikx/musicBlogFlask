@@ -106,6 +106,32 @@ def load_user(user_id):
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    return "Login";
+    form = LoginForm()
+
+    '''
+    I have added checking for Username existence
+    in the Login Form itself. So I can be sure that
+    if the form validated, the User exists.
+    I do need to check whether passwords match, however.
+    '''
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=form.username.data).first()
+        if bcrypt.check_password_hash(user.password, form.password.data):
+            login_user(user)
+            '''
+            It might be possible, that the user was trying to go
+            to a Login Restricted page, hence we'll redirect him
+            to the page he was trying to go to.
+            '''
+            next_url = request.args.get('next')
+            # ? This prevents security exploits.
+            if not is_safe_url(next_url, {"localhost:5000"}):
+                return abort(400)
+            flash("Welcome back!", "success")
+            redirect_to_page = next_url or url_for('feed') 
+            return redirect(redirect_to_page)
+        else:
+            flash("Please check your username and password.", "danger")
+    return render_template("login.html", title="Login", form=form);
 
 
