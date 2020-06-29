@@ -22,10 +22,10 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{url_for('welcome')}}">
                 <img src="{{url_for('static', filename='icons/music-note.svg')}}" height="30" width="30">
             </a>
-            <a class="nav-item nav-link" href="#">
+            <a class="nav-item nav-link" href="{{url_for('feed')}}">
                 Home
             </a>
             <!-- More links to go here -->
