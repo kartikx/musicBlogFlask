@@ -134,4 +134,9 @@ def login():
             flash("Please check your username and password.", "danger")
     return render_template("login.html", title="Login", form=form);
 
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('welcome'))
 
