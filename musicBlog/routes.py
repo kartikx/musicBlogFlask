@@ -9,78 +9,79 @@ posts = [
     {'username': "kartikx",
     'title': "First Post",
     'content': "Welcome to my first page!",
-    'date_posted': "11/06/2020"
+    'date_posted': datetime.utcnow()
+    # 'date_posted': "11/06/2020"
     },
     {'username': "kartikx",
     'title': "Second Post",
     'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
+    'date_posted': datetime.utcnow()
+    # 'date_posted': "12/06/2020"
     },
     {'username': "kartikx",
     'title': "Second Post",
     'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
-    {'username': "kartikx",
-    'title': "Second Post",
-    'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
-    'date_posted': "12/06/2020"
-    },
+    'date_posted': datetime(2020, 6, 27, 7, 2, 39, 800000)
+    }
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil."
+    # # 'date_posted': "12/06/2020"
+    # },
+    # {'username': "kartikx",
+    # 'title': "Second Post",
+    # 'content': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro laudantium officiis accusamus, rem illo laborum ratione unde reiciendis, dolores, harum officia maxime atque vel voluptatibus nesciunt tempora! Dolore, nihil.",
+    # },
 ]
 
 @app.route('/')
@@ -90,7 +91,7 @@ def welcome():
 
 @app.route('/feed')
 def feed():
-    return render_template("feed.html", title="Feed", posts=posts)
+    return render_template("feed.html", title="Feed", posts=posts, date_current=datetime.utcnow())
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():

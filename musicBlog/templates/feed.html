@@ -11,7 +11,16 @@
                         {{post.title}}
                     </a>
                     <p class="article-metadata float-right">
-                        {{post.date_posted}}
+                        {% set diff = date_current.date() - post.date_posted.date() %}
+                        {% if not diff.days %}
+                            {% if not diff.hours %}
+                                1 hour ago
+                            {% else %}
+                                {{ diff.hours }} ago
+                            {% endif %}
+                        {% else %}
+                            {{ diff.days }} days ago
+                        {% endif %}
                     </p>
                     <p>
                         {{post.content}}
