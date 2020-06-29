@@ -88,7 +88,18 @@ def welcome():
 def feed():
     return render_template("feed.html", title="Feed", posts=posts)
 
-@app.route('/login')
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        hashed_pw = bcrypt.generate_password_hash(form.password.data)
+        user = User(username=form.username.data, email=form.email.data, password=hashed_pw)
+        db.session.add(user)
+        db.session.commit()
+        flash("Your account has been created, you may now log in", "success")
+        return redirect(url_for('login'))
+    return render_template("register.html", title="Sign Up", form=form)
+
 def login():
     return "Login";
 
