@@ -80,7 +80,7 @@ posts = [
 ]
 
 @app.route('/')
-def welcome_page():
+def welcome():
     # ? Add check to see if logged in.
     return render_template("welcome.html", title="Home")
 
