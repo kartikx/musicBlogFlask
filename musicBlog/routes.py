@@ -136,7 +136,7 @@ def login():
             redirect_to_page = next_url or url_for('feed') 
             return redirect(redirect_to_page)
         else:
-            flash("Please check your username and password.", "danger")
+            flash("Please check your username and password.", "login_failed")
     return render_template("login.html", title="Login", form=form);
 
 @app.route('/logout')
